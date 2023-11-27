@@ -1,11 +1,8 @@
-
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-
-
 
 ::-moz-selection {
     background: #b3d4fc;
@@ -77,77 +74,7 @@ textarea {
 
 header {
     background-image: url("../img/lines.jpg");
-	width: 100%;
 }
-
-main {
-   width: 75%;
-   
-}
-
-ul {
-	display: flex; flex-wrap: wrap; 
-	
-}
-
-/* Lisätty säännöt */
-
-body {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main {
-    flex: 3; /* 75% of the available space */
-}
-
-aside {
-    flex: 1; /* 25% of the available space */
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Kuvien välissä oleva tila jakautuu tasaisesti */
-}
-
-li {
-    width: calc(33.33% - 10px); /* Kolme kuvaa per rivi, vähennetty marginaalit */
-    margin-bottom: 20px;
-    position: relative;
-}
-
-figure {
-    position: relative;
-}
-
-figcaption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Taustan väri otsikolle */
-    padding: 10px;
-}
-
-figcaption h3 {
-    margin: 0;
-    color: #fff;
-}
-
-/* Media query lisätty kuvien asettelulle kapeissa näytöissä */
-
-@media only screen and (max-width: 600px) {
-    li {
-        width: 100%; /* Yksi kuva per rivi */
-    }
-}
-
-
-aside {
-   width: 25%;
-}
-
 
 header h1 {
 	margin: 0;
@@ -170,13 +97,8 @@ header h1 {
     body {
         max-width: 60em;
         margin: auto;
-		display: flex; flex-wrap: wrap;
     }
 
-}
-
-@media only screen and (max-width: 600px) {
-    main, aside { width: 100%; }
 }
 
 @media print,
@@ -290,19 +212,10 @@ header h1 {
     h3 {
         orphans: 3;
         widows: 3;
-		position: absolute;
-		top: 0px;
     }
 
     h2,
     h3 {
         page-break-after: avoid;
     }
-	
-	h3 {
-       
-		position: absolute;
-		top: 0px;
-    }
-	
 }
