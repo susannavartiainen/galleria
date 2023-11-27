@@ -98,11 +98,11 @@ body {
 }
 
 main {
-    flex: 3.5; /* 75% of the available space */
+    flex: 3; /* 75% of the available space */
 }
 
 aside {
-    flex: 0.5; /* 25% of the available space */
+    flex: 1; /* 25% of the available space */
 }
 
 ul {
