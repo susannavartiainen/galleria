@@ -98,7 +98,7 @@ body {
 }
 
 main {
-    flex: 3; /* 75% of the available space */
+    flex: 3.5; /* 75% of the available space */
 }
 
 aside {
