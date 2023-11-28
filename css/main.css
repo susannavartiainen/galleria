@@ -4,6 +4,38 @@ html {
     line-height: 1.4;
 }
 
+	.laatikko{
+		
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		justify-content: center;
+		gap: 20px 50px
+	}	
+	
+	figure{
+		
+	
+		border: thin #c0c0c0 solid;
+		display: flex;
+		flex-flow: column;
+		
+		max-width: 1200px;
+		margin: auto;
+		
+		
+}
+	
+	
+	figcaption{
+	background-color: #ffffff;
+	color: #fff;
+	font: italic smaller sans-serif;
+	padding: 0px;
+	text-align: left;
+		
+}
+
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -218,4 +250,6 @@ header h1 {
     h3 {
         page-break-after: avoid;
     }
+		
+		
 }
