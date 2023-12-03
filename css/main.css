@@ -4,40 +4,6 @@ html {
     line-height: 1.4;
 }
 
-	.laatikko{  
-		
-		display: flex;     /* Tämä osuus on UL listaa */
-		flex-wrap: wrap;
-		list-style-type: none;
-		justify-content: center;
-		gap: 20px 50px
-	}	
-	
-	figure{
-		
-	
-		border: thin #c0c0c0 solid;
-		display: flex;
-		flex-flow: column;
-		
-		max-width: 1200px;
-		margin: auto;
-		
-		
-}
-	
-	
-	figcaption{
-	
-    background-color: rgba(0, 0, 0, 0.5); /* tämä on himmeä taustaväri kuvan päällä olevalle tekstille*/
-    position: absolute; /*Tämän avulla teksti menee kuvan sisään*/
-    top: 0px; /*Tämän avulla otsikko alkaa kuvan ihan yläreunasta*/
-    width: 100%;
-    color: white;
-    left: 0px;
-		
-}
-
 ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
@@ -90,9 +56,6 @@ textarea {
 
 .primary-color {
     background-color: #717171;
-	display: flex;
-	flex-grow: 1;
-	
 }
 
 .secondary-color {
@@ -100,19 +63,10 @@ textarea {
 }
 
 .default {
-	display: flex;			
     background-color: #2a2e89;
 	color: #fff;
-	min-width: 20%;
-	flex-wrap: wrap;
-	
-}
 
-.sivulista {
-	
-	list-style: none;			/* aside lista  */
 }
-
 
 .alert {
     background-color: #c60f13;
@@ -143,8 +97,6 @@ header h1 {
     body {
         max-width: 60em;
         margin: auto;
-	display: flex;
-	flex-wrap: wrap;
     }
 
 }
@@ -266,6 +218,65 @@ header h1 {
     h3 {
         page-break-after: avoid;
     }
-		
-		
 }
+
+ 
+
+ 
+
+p {
+    text-indent: 15px; 
+}
+
+ figure { 
+    position: relative; 
+    margin: 15px; 
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: absolute; 
+    top: 0px; 
+    width: 100%;
+    color: white;
+    left: 0px;
+}
+
+h3 {
+    margin: 5px 10px;
+}
+
+ul {
+    display: flex;  
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding-left: 0px;
+    padding-right: 0px; 
+}
+ 
+li    {
+    list-style-type: none;  
+}
+
+main { 
+    width: 80%;
+}
+
+ header { 
+    width: 100%;
+}
+	 
+body { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside { 
+    width: 20%;
+}
+
+@media only screen and (max-width: 600px) { 
+    header, main, aside { width: 100%; }
+    
+}  
