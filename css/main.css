@@ -4,9 +4,9 @@ html {
     line-height: 1.4;
 }
 
-	.laatikko{
+	.laatikko{  
 		
-		display: flex;
+		display: flex;     /* Tämä osuus on UL listaa */
 		flex-wrap: wrap;
 		list-style-type: none;
 		justify-content: center;
@@ -28,11 +28,12 @@ html {
 	
 	
 	figcaption{
-	background-color: #ffffff;
-	color: #fff;
+	
+	color: #ffffff;
 	font: italic smaller sans-serif;
-	padding: 0px;
-	text-align: left;
+	background: rgba(0, 0, 0, 0.6); /* Semi-transparent white background */
+    padding: 10px;
+    text-align: center;
 		
 }
 
@@ -88,6 +89,9 @@ textarea {
 
 .primary-color {
     background-color: #717171;
+	display: flex;
+	flex-grow: 1;
+	
 }
 
 .secondary-color {
@@ -95,10 +99,19 @@ textarea {
 }
 
 .default {
+	display: flex;			/* aside elementin classi */
     background-color: #2a2e89;
 	color: #fff;
-
+	min-width: 20%;
+	flex-wrap: wrap;
+	
 }
+
+.sivulista {
+	
+	list-style: none;			/* aside lista  */
+}
+
 
 .alert {
     background-color: #c60f13;
