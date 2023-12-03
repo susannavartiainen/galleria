@@ -29,11 +29,12 @@ html {
 	
 	figcaption{
 	
-	color: #ffffff;
-	font: italic smaller sans-serif;
-	background: rgba(0, 0, 0, 0.6); 
-    padding: 10px;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* tämä on himmeä taustaväri kuvan päällä olevalle tekstille*/
+    position: absolute; /*Tämän avulla teksti menee kuvan sisään*/
+    top: 0px; /*Tämän avulla otsikko alkaa kuvan ihan yläreunasta*/
+    width: 100%;
+    color: white;
+    left: 0px;
 		
 }
 
@@ -142,6 +143,8 @@ header h1 {
     body {
         max-width: 60em;
         margin: auto;
+	display: flex;
+	flex-wrap: wrap;
     }
 
 }
