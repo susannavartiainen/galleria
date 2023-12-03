@@ -31,7 +31,7 @@ html {
 	
 	color: #ffffff;
 	font: italic smaller sans-serif;
-	background: rgba(0, 0, 0, 0.6); /* Semi-transparent white background */
+	background: rgba(0, 0, 0, 0.6); 
     padding: 10px;
     text-align: center;
 		
@@ -99,7 +99,7 @@ textarea {
 }
 
 .default {
-	display: flex;			/* aside elementin classi */
+	display: flex;			
     background-color: #2a2e89;
 	color: #fff;
 	min-width: 20%;
